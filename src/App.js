@@ -22,6 +22,8 @@ const App = () => {
     //set recipes
     setRecipes(data.hits);
 
+    console.log(data.hits);
+
     fetch(url);
   }
 
@@ -35,7 +37,7 @@ const App = () => {
       </form>
 
       {recipes.map(recipe => (
-        <Recipe />
+        <Recipe title = {recipe.recipe.label} image = {recipe.recipe.image} calories = {recipe.recipe.calories} />
       ) )}
     </div>
   );
