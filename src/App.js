@@ -8,6 +8,7 @@ const App = () => {
 
   useEffect(()=> {
 
+    getRecipes();
   }, []);
 
   const getRecipes = async () => {
@@ -15,7 +16,7 @@ const App = () => {
     const data = await respose.json();
     console.log(data);
 
-    fetch();
+    fetch(url);
   }
 
   return (
