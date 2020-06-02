@@ -33,6 +33,10 @@ const App = () => {
           Search
         </button>
       </form>
+
+      {recipes.map(recipe => (
+        <Recipe />
+      ) )}
     </div>
   );
 }
