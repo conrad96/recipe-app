@@ -20,10 +20,7 @@ const App = () => {
     const data = await respose.json();
     
     //set recipes
-    setRecipes(data.hits);
-
-    console.log(data.hits);
-
+    setRecipes(data.hits);    
     fetch(url);
   }
 
